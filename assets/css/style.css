@@ -220,7 +220,8 @@ h1, h2, h3, h4, h5, h6 {
 */
 .mobile-nav-toggle {
   color: #5f687b;
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: bold;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -324,9 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-
-  padding-top: 82px;
+  height: 100vh;
 }
 
 #hero h1 {
@@ -394,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: auto;
   }
  
   #hero .hero-img {
@@ -450,19 +449,120 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  padding-top: 2em;
+}
 .about .contents h3 {
   font-weight: 700;
   font-size: 32px;
   color: #5f687b;
 }
 
+
+@media (max-width: 575px) {
+  .about{
+    padding-top: 0em;
+  }
+}
+
+@media (max-width: 767px) {
+  .a{
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
-# Courses
+# Space
 --------------------------------------------------------------*/
-#courses .contents h3 {
+.space{
+ margin: 100px 0px 0px 0px;
+}
+.space .contents{
+  padding: 25px;
+}
+.space .contents h3 {
+  font-weight: 700;
+  font-size: 32x;
+  color: #5f687b;
+}
+.line{
+  display: inline-block;
+}
+@media (max-width: 900px) {
+  .space .contents h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #5f687b;
+  }
+}
+@media (max-width: 280px) {
+  .space .contents h3 {
+    font-weight: 700;
+    font-size: 15px;
+    color: #5f687b;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us{
+  margin-top: 75px;
+}
+
+.why-us .cards{
+  background-color: white;
+  margin:20px;
+}
+.him{
+  height: 25%;
+  width: 25%;
+  box-shadow: 0 8px 28px rgba(22, 223, 126, 0.4);
+  transition: box-shadow 100ms ease-in-out;
+}
+
+.him:hover {
+  box-shadow: 2px 1px 25px 12px rgba(22, 223, 126, 0.5);
+}
+
+.why-us .contents h3 {
   font-weight: 700;
   font-size: 32px;
   color: #5f687b;
+}
+
+input{
+  text-align: center;
+  font-size: 16px;
+}
+
+
+  .form-control{
+    font-weight: 600;
+  }
+
+@media (max-width: 1000px) {
+  .him{
+    height: 40%;
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .form-control{
+    font-size: 10.2px;
+    font-weight: 600;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Courses
+--------------------------------------------------------------*/
+.courses .contents h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #5f687b;
+  margin-top: 6%;
 }
 .content {
   position: relative;
@@ -473,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   position: absolute;
   width: 100%;
   border-radius: 20px;
@@ -523,11 +623,12 @@ h1, h2, h3, h4, h5, h6 {
 .content-details h5{
   color: #fff;
   font-weight: 500;
-
+  font-size: medium;
 }
 
 .content-details p{
   color: #fff;
+  font-size: small;
 }
 
 .fadeIn-bottom{
@@ -549,7 +650,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   display: inline-block;
   transition: 0.5s;
-  margin-left: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #5f687b;
   display: inline-flex;
   align-items: center;
@@ -558,13 +660,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #contact .btn-watch-video i {
   color: #949cac;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 0;
 }
 
 #contact .btn-watch-video:hover i {
   color: #16df7e;
 }
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -579,3 +684,4 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
  text-decoration: none;
 }
+
